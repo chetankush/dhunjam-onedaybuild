@@ -1,0 +1,257 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #030303; 
+  color: #FFFFFF;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  scrollbar-color: transparent;
+  overflow-y: visible;
+  /* Make the background fixed and cover the entire viewport */
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Dashboard container styles */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow-y: visible;
+ 
+  max-height: 100vh;
+
+
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
+}
+
+.dashboard-container::-webkit-scrollbar {
+  width: 0; 
+}
+  /* Heading styles */
+  .dashboard-heading {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+  }
+  
+  /* Radio buttons container styles */
+  .radiobuttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    position: relative;
+  }
+  
+  /* Flexible div styles */
+  .flexible-div {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+  }
+  
+  /* Label styles */
+  .flexible-div label {
+    font-size: 16px;
+  }
+  
+  /* Radio button container styles */
+  .leftradio {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Input styles for number and radio types */
+  .flexible-div input[type="number"],
+  .flexible-div input[type="radio"] {
+    width: 65px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    background-color: #030303;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Checked checkbox styles */
+  .flexible-div input[type="checkbox"]:checked {
+    background-color: #6741D9;
+  }
+  
+  /* Styling for minimum input box width */
+  .mininputbox {
+    max-width: 280px;
+  }
+  
+  /* Container styles for regular song div */
+  .regularsongdiv {
+    display: flex;
+    width: max-content;
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Styles for left div */
+  .leftdiv {
+    max-width: 280px;
+    width: 100%;
+  }
+  
+  /* Styles for right div */
+  .rightdiv {
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container styles for four input fields */
+  .fourdivsfield {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Styles for individual input boxes */
+  .inputone input {
+    width: 65px;
+    height: 40px;
+  }
+  
+  /* Styles for graph container */
+  .graph-container {
+    max-width: 600px;
+    width: 100%;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: visible;
+  }
+  
+  /* Button styles */
+  .dashboard-button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #6741D9;
+    border-radius: 12px;
+    background-color: #6741D9;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Styling for radio buttons container */
+  .radiobuttons {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for left radio div */
+  .leftradio {
+    width: 100px;
+  }
+  
+  /* Styling for left radio input */
+  .leftradio input {
+    width: 30px !important;
+  }
+  
+  /* Styling for second right div input */
+  .secondrightdiv input {
+    width: 100% !important;
+  }
+  
+  /* Button hover and active styles */
+  .dashboard-button:hover,
+  .dashboard-button:active {
+    border-color: #F0C3F1;
+
+  }
+  
+  /* Greyed out styles */
+  .greyed-out {
+    background-color: #C2C2C2;
+    color: #ffffff;
+    border-color: #C2C2C2;
+  }
+
+
+
+  @media (max-width: 450px) {
+    .dashboard-heading {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      text-wrap: wrap;
+    }
+
+    .flexible-div{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
+
+    .leftdiv{
+      padding-bottom: 20px;
+    }
+    .dashboard-button {
+      max-width: 300px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #6741D9;
+      border-radius: 12px;
+      background-color: #6741D9;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 16px;
+    }
+      /* Styles for graph container */
+  .graph-container {
+    max-width: 350px;
+    width: 100%;
+    height: 350px;
+    width: 350px;
+   margin-bottom: 40px;
+   overflow-x: scroll;
+   overflow-y: visible;
+  }
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+    max-height: none !important;
+  }
+  
+
+  }

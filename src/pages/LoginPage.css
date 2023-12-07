@@ -1,0 +1,120 @@
+body {
+  background-color: #030303;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin: 0; /* Remove default body margin */
+  height: 100vh; /* Set full height of the viewport */
+  overflow:hidden;
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
+}
+
+
+.login-wrapper{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10;
+  height: 100vh;
+
+}
+
+
+.login-container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Add the rest of your styles */
+
+
+.login-container::-webkit-scrollbar {
+  width: 0; 
+
+}
+
+.login-container h2 {
+  font-size: 32px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  background-color: #030303;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.password-box {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  background-color: #030303;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.eyebox {
+  cursor: pointer;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.password-box input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.login-input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.6; /* Adjust as needed */
+  font-family: 'Poppins', sans-serif; /* Added */
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #6741D9;
+  border-radius: 12px;
+  background-color: #6741D9;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  top: 30px;
+}
+
+.login-button:hover,
+.login-button:active {
+  border-color: #F0C3F1;
+}
+
+.register-link {
+  position: relative;
+  top: 40px;
+  color: #FFFFFF;
+  font-weight: 200;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

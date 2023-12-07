@@ -1,0 +1,12 @@
+/* Graph.css */
+
+.graphmain {
+    display: flex;
+    font-size: 16px;
+
+    justify-content: start;
+  
+    width: 100%;
+  }
+  
+
